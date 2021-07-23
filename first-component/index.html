@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script type="module" src="first-component.js"></script>
+    <title>Document</title>
+    <style>
+      .title {
+        background: red;
+        color: white;
+        padding: 15px 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <counter-comp>
+      <div slot="header">Title: Star Wars</div>
+      <div slot="content">Review: Nice Movie</div>
+      <div slot="footer">Copyright</div>
+    </counter-comp>
+    <counter-comp>component two</counter-comp>
+    <div class="title">Not a part of component</div>
+  </body>
+</html>
